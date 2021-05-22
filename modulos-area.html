@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Softmax - Módulos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TZ4M89');</script>
+  <!-- End Google Tag Manager -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TZ4M89"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-dark" href="index.html"><img src="images/softmax.gif" height="50px" width="100px"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="clientes.html" class="nav-link">Clientes</a></li>
+	          <li class="nav-item"><a href="modulos-area.html" class="nav-link">Módulos</a></li>
+	          <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/cats.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+          <div class="col-md-9 ftco-animate mb-5 text-center">
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span>Módulos <span><i class="fa fa-chevron-right"></i></span></p>
+            <h1 class="mb-0 bread">Módulos</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p></p>
+      <div class="container">
+    <ul style= "float:left;">
+      <li class="nav-item"><a href="modulos-area.html#vendas" class="nav-link">Vendas</li></a>
+      <li class="nav-item"><a href="modulos-area.html#vendas" class="nav-link">Compras</li></a>
+      <li class="nav-item"><a href="modulos-area.html#vendas" class="nav-link">Financeiro Contas a receber</li></a>
+      <li class="nav-item"><a href="modulos-area.html#financeiro" class="nav-link">Financeiro Contas a Pagar</li></a>
+      <li class="nav-item"><a href="modulos-area.html#financeiro" class="nav-link">PCP - Planejamento e Controle de Produção</li></a>
+      <li class="nav-item"><a href="modulos-area.html#financeiro" class="nav-link">MRP - Planejamento dos Recursos de Manufatura</li></a>
+      <li class="nav-item"><a href="modulos-area.html#controle" class="nav-link">Controle Bancário</li></a>
+      <li class="nav-item"><a href="modulos-area.html#controle" class="nav-link">Estoque</li></a>
+      <li class="nav-item"><a href="modulos-area.html#controle" class="nav-link">Fórmula de produtos</li></a>
+      <li class="nav-item"><a href="modulos-area.html#controleE" class="nav-link">Controle de estoque</li></a>
+      </ul>
+      <ul>
+      <li class="nav-item"><a href="modulos-area.html#controleE" class="nav-link">Ensaio de produtos / Desenvolvimento</li></a>
+      <li class="nav-item"><a href="modulos-area.html#controleE" class="nav-link">Controle de Qualidade</li></a>
+      <li class="nav-item"><a href="modulos-area.html#linha" class="nav-link">Linha de produção</li></a>
+      <li class="nav-item"><a href="modulos-area.html#linha" class="nav-link">Gestão de Contratos</li></a>
+      <li class="nav-item"><a href="modulos-area.html#linha" class="nav-link">Portaria / Visitantes</li></a>
+      <li class="nav-item"><a href="modulos-area.html#frota" class="nav-link">Frota</li></a>
+      <li class="nav-item"><a href="modulos-area.html#frota" class="nav-link">Controle de Pedidos de Vendas</li></a>
+      <li class="nav-item"><a href="modulos-area.html#frota" class="nav-link">Pedido de compra</li></a>
+      <li class="nav-item"><a href="modulos-area.html#NF" class="nav-link">NF-e / Faturamento</li></a>
+      <li class="nav-item"><a href="modulos-area.html#NF" class="nav-link">Custos</li></a>
+   </ul>
+  </div>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div  id ="vendas" class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/image_1.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Vendas</a></h3>
+                <p>Apoio à operação comercial de venda da empresa, permitindo controlar o planejamento de metas de venda,
+                   a administração de orçamentos e pedidos de venda, bem como a integração automática com estoques, 
+                   viabilizando o controle de reservas e encomendas, contas a receber, fiscal e contábil, 
+                   e também análise e controle de créditos, descontos concedidos e controle de número de série. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/image_2.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Compras</a></h3>
+                <p>Possui fluxo amplo que pode se estender desde a requisição interna até a entrada de mercadoria e notas fiscais no sistema.
+                   A automação do processo de compras aumenta a produtividade na cotação de ofertas e comparativos de compras, através da 
+                   geração de um rico histórico de preços e condições comerciais possibilita ao gestor buscar a redução de custos e melhores
+                   negociações. Veja alguns dos recursos básicos deste módulo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/image_3.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Financeiro Contas a receber</a mb-3></h3>
+								<p>Atuando de forma totalmente integrada aos módulos de Vendas, Faturamento e Distribuição, Contas Correntes e
+                   Fluxo de Caixa oferece um conjunto de funcionalidades para total controle dos recebíveis da empresa, 
+                   administrando toda a carteira de títulos, recebendo automaticamente os movimentos gerados pelos demais 
+                   eventos e demais módulos e agregando valor na gestão financeira da organização. Controle de todo o faturamento 
+                   a receber da empresa. Contém títulos gerados pelo faturamento de nota fiscal. </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div id="financeiro" class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/image_4.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Financeiro Contas a Pagar</a></h3>
+                <p> Atuando de forma totalmente integrada aos módulos de Compras, Recebimento, 
+                  Contas Correntes e Fluxo de Caixa oferece um conjunto de funcionalidades para total controle dos
+                  pagamentos e obrigações devidos pela empresa, administrando toda a carteira de títulos, recebendo
+                  automaticamente os movimentos gerados pelos demais eventos e demais módulos e agregando valor na 
+                  gestão financeira da organização. Controle de todo o faturamento a pagar da empresa. Contém títulos
+                  gerados pelo faturamento do pedido de compra. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/image_5.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">PCP - Planejamento e Controle de Produção</a></h3>
+                <p> Planejamento da produção, análise de demandas de pedidos e parâmetros de reposição, gerando ordens
+                    de compra e produção em função das regras e parâmetros universais do MRP, agiliza o processo de análise
+                    de necessidade e liberação de ordens. Sua velocidade do planejamento simplifica e automatiza o processo
+                    produtivo, eliminando falhas e atrasos no processo produtivo, integrando os departamentos de produção, 
+                    compras e suprimentos.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/image_6.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">MRP - Planejamento dos Recursos de Manufatura</a mb-3></h3>
+								<p>Planejar é uma das atividades mais importantes dentro de uma organização e, portanto, 
+                  deve ocupar um lugar de destaque dentro dela. Após emissão do pedido de venda e sua aprovação, 
+                  o mesmo é facilmente visualizado pelo PCP que efetua análise e explosão da sua ordem de produção. </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div id ="controle" class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/controle_bancario.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Controle Bancário</a mb-3></h3>
+								<p> Controle completo da área financeira da empresa com gerenciamento de contas a pagar, 
+                  contas a receber, fluxo de caixa e contas correntes, automatiza as operações e decisões 
+                  do dia a dia provendo informações gerenciais para o processo de tomada de decisão. Integrado
+                   com os demais módulos do ERP Maxcontrol, proporciona o controle financeiro global da empresa,
+                    permitindo o fluxo de informações com rapidez e assertividade. </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/estoque.jpeg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Estoque</a mb-3></h3>
+								<p>Proporciona completa gestão, otimizando o investimento em estoques, 
+                  aumentando o uso eficiente dos recursos da empresa e minimizando as 
+                  necessidades de capital investido. Tudo isso é obtido através do uso de 
+                  ferramentas inteligentes que permitem de maneira segura e flexível: 
+                  analisar/determinar a permanência e periodicidade de reabastecimento dos itens 
+                  de estoque, determinar o volume necessário de estoque para um determinado período, 
+                  controlar os volumes de estoques em termos de quantidade e valor, dentre outras.  </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/índice.png');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Fórmula de produtos / Composição de produtos / Produtos Mistos
+                </a mb-3></h3>
+								<p>Com uma tabela unificada para o cadastro de produtos e insumos, o Maxcontrol garante total
+                  flexibilidade para a especificação de composição
+                  dos produtos, seja qual for a complexidade. 
+                  
+                  As fórmulas dos produtos de fabricação própria podem incluir outros itens compostos, se adequando a qualquer que 
+                  seja a estrutura dos seus produtos.
+                  Uma tabela de vínculos permite apontar os 
+                  fornecedores que vendem cada produto e, 
+                  opcionalmente, informar códigos, descrições e 
+                  preços diferenciados por fornecedor.  </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div id ="controleE" class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/Inventário-de-Estoque-1.png');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Controle de estoque
+                </a mb-3></h3>
+								<p>
+                   Saber "o que", "quando" e "quanto" deve ser reposto no estoque, controlando o que sai e o que resta de material estocado.
+                   Esta informação deve estar disponível a qualquer momento do dia, sem que haja necessidade de contar ou medir fisicamente 
+                   o estoque.<br>Evitar desvios, perdas, validade e roubo são um dos motivos importantes para que sua a empresa invista num controle de estoques eficiente. </br>                  </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/1662_original.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Ensaio de produtos / Desenvolvimento
+                </a mb-3></h3>
+								<p>
+                  <ul style= "float:left;">
+                    <li>Módulo destinado ao desenvolvimento de novos produtos (ensaios);</li>
+                    <li>Identificação de composição de produto (formula de produtos);</li>
+                    <li>Apuração de custos de produção;</li>
+                    <li>Histórico dos testes;</li>
+                    <li>Em cada teste, gera sequência de testes;</li>
+                    <li>Após aprovação exporta dados de desenvolvimento (formulas e custos) para produto final;</li>
+                    <li>Vínculo com produto final, fácil localização do desenvolvimento anexado ao produto;</li>
+                    <li>Anexador de documentos (fotos, imagens, PDFs, Docs em geral);</li>
+                    <li>Vinculado ao modulo de cadastro de amostras (identificar e etiquetar amostras de clientes).</li>
+                  </ul>
+                 </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/COntrole-e1583502935701.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Controle de Qualidade
+                </a mb-3></h3>
+								<p>
+                  <ul style= "float:left;">
+                    <li>Segue parâmetros e recursos ISO;</li>
+                    <li>Avalição de fornecedores (certificação e pontuação de fornecedores) com parâmetros de liberar compras somente de fornecedores qualificados;                    </li>
+                    <li>Avaliação de Matéria-Prima (certificação e testes de matérias-primas) parâmetros de liberar compras somente de matérias-Primas avaliadas e certificadas;                    </li>
+                    <li>Reavaliação periódica de certificados e suspenção automática de certificados vencidos;</li>
+                    <li>Expedição com requisitos de recebimento. (Avaliação de recebimento, tais como: pontualidade, estado de embalagem entre outros);                    </li>
+                    <li>Avaliação de produção (baixa de ordem de produção com requisitos e qualificação de lotes);</li>
+                    <li>Emissão de laudos e certificados.</li>
+                  </ul>
+                 </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div id="linha" class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/Blog_Post_Linha-de-Producao.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Linha de produção
+                </a mb-3></h3>
+								<p>
+                  <ul style= "float:left;">
+                    <li>Controle de equipamentos;</li>
+                    <li>Controle de processos;</li>
+                    <li>Ordem de produção por linha de produção;</li>
+                    <li>Relatório de produtividade por maquina;</li>
+                    <li>Relatório de produtividade por Processo;</li>
+                    <li>Relatório de produtividade por Operador;</li>
+                    <li>Apontamento de gargalos de produção;</li>
+                    <li>Vinculo com PCP / MRP.</li>
+                  </ul>
+                 </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/gestao-data-contrato-1.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Gestão de Contratos
+                </a mb-3></h3>
+								<p>
+                  <ul style= "float:left;">
+                    <li>Lançamentos de Contratos;</li>
+                    <li>Aprovação;</li>
+                    <li>Controle de despesas;</li>
+                    <li>Lançamento automático de parcelas Financeiro.</li>
+                  </ul>
+                 </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/controle-de-acesso.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Portaria / Visitantes
+                </a mb-3></h3>
+								<p>
+                  <ul style= "float:left;">
+                    <li>Controle de visitantes;</li>
+                    <li>Agendamento de visitantes;</li>
+                    <li>Controle de entrada e saída de funcionários;</li>
+                    <li>Controle de entrada e saída de veículos (vinculado com Frota).</li>
+                  </ul>
+                 </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div id="frota" class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/manutenção-de-frota-de-caminhão.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Frota
+                </a mb-3></h3>
+								<p>
+                  <ul style= "float:left;">
+                    <li>Controle de veículos;</li>
+                    <li>Controle de manutenção;</li>
+                    <li>Agendamento de manutenção fixado em quilometragem;</li>
+                    <li>Controle de abastecimentos (média de consumo, financeiro (conta a Pagar) por postos de combustível;</li>
+                    <li>Vinculado com modulo de Portaria apontamento de quilometragem, motoristas,entrada e saídas.</li>
+                  </ul>
+                 </p>              
+							</div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/excel-nas-empresas-750x410.jpg');">
+	              </a>
+                <h3 class="heading mb-3"><a href="#">Controle de Pedidos de Vendas
+                </a mb-3></h3>
+								<p>Com o controle de pedidos de vendas toda a gestão da sua empresa fica mais organizada. Complete seu processo de vendas com 
+                  a gestão de pedidos de vendas. 
+                  Utilize o Maxcontrol para disparar ações dentro da sua empresa, como a encomenda ou fabricação de novos produtos, 
+                  integrado com faturamento torna o processo de emissão de notas fiscais simples e ágil.</p>
+							</div>
+            </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <div class="text text-center">
+              <a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/planilha-de-gastos.png');">
+              </a>
+              <h3 class="heading mb-3"><a href="#">Pedido de compra
+              </a mb-3></h3>
+              <p>
+                O Pedido de Compra é um contrato formal entre a empresa e o fornecedor, deve representar fielmente as condições 
+                e características da compra efetuada. É o acordo que representa as condições em que foi feita a negociação, tais
+                como: material, quantidade, qualidade, frequência de entregas, prazos, preços, local de entrega, tributação, entre outros.
+               </p>              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <div id="NF" class="text text-center">
+              <a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/n_41363_2eeb9064f7f5b2569912cbb772a96438.jpg');">
+              </a>
+              <h3 class="heading mb-3"><a href="#">NF-e / Faturamento
+              </a mb-3></h3>
+              <p>
+                Apoio ao processo de faturamento da empresa otimizando a emissão de notas fiscais individuais ou em lote e também permitindo
+                a montagem de cargas através de operações dos mais diversos modelos tais como emissão das notas fiscais na própria empresa,
+                em armazém geral ou ponto de retirada. Totalmente aderente à legislação vigente, atende também a emissão de Nota Fiscal
+                Eletrônica Ambiente Nacional, integrando-se automaticamente com os módulos de contas a receber, estoque e escrita fiscal.
+                Derivado do pedido de venda é a emissão da nota fiscal (nota fiscal impresa ou NF-e). Informa-se a quantidade 
+                disponibilizada, este ato deduz do estoque de produto acabado gerando faturamento de contas a receber. 
+               </p>              
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex ftco-animate">
+          <div class="blog-entry justify-content-end">
+            <div class="text text-center">
+              <a href="#" class="block-20 img d-flex align-items-center" style="background-image: url('images/custos.jpeg');">
+              </a>
+              <h3 class="heading mb-3"><a href="#">Custos
+              </a mb-3></h3>
+              <p>
+                A importância de saber calcular corretamente seu preço! Por quanto vender seu Produto?<br>
+                O modulo tem por objetivo auxiliar na formação do preço de venda,adotando procedimentos
+                tecnicos para formar o preço de venda adequado de produtos ou serviços.<br>
+                <ul style= "float:left;">
+                  <li>Cadastros de operações fabris;</li>
+                  <li>Processos produtivos;</li>
+                  <li>Monitoramento de performances de processos;</li>
+                  <li>Pré-cálculo de custo de produtos (desenvolvimento);</li>
+                  <li>Centro de custo e grupos;</li>
+                  <li>Relatórios gerenciais e analíticos;</li>
+                  <li>Integração com outros módulos;</li>
+                </ul>
+               </p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>	
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">Softmax</a></h2>
+              <p>Software sob medida para sua empresa</p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Compania</h2>
+              <ul class="list-unstyled">
+                <li><a href="modulos-area.html"><span class="fa fa-chevron-right mr-2"></span>Módulos</a></li>
+                <li><a href="contato.html"><span class="fa fa-chevron-right mr-2"></span>Contato</a></li>
+              </ul>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
